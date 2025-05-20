@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(175, 155, 123);
+}
+
+header {
+  display: flex;
+  justify-content: center; /* centraliza horizontalmente */
+  padding: 20px 0; /* espaço em cima e embaixo */
+}
+
+.title {
+  display: inline-block; /* faz o h1 ter largura do conteúdo + padding */
+  background-color: rgb(223, 165, 89);
+  padding: 30px 50px;
+  border: 3px solid #b37f2d;
+  border-radius: 10px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* text-align: center;  -- aqui pode tirar, pois o texto fica alinhado por padrão */
+  margin: 20px 0; /* espaçamento em cima e em baixo */
+}
+
+.main {
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+.btn {
+  background-color: rgb(232, 168, 83);
+}
+
+.input {
+  width: 100%; /* ocupa toda a largura do contêiner pai */
+  max-width: 600px; /* limite máximo para não ficar gigante */
+}
+
+.container {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.cart,
+.products {
+  flex: 1;
+  padding: 10px;
+  background-color: rgb(223, 165, 89);
+  text-align: center;
+  border-radius: 5px;
+  font-size: xx-small;
+}
+
+.js-productslist {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 10px;
+  list-style: none;
+  justify-content: center;
+}
+
+.js-productslist li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 180px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #fafafa;
+}
+
+.product-image {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 20px;
+  margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.product-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.buy-btn {
+  background-color: #e5a718;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  margin-top: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 50px;
+}
+
+.buy-btn:hover {
+  background-color: #d3d7d4;
+}
+
+.remove-btn {
+  background-color: #b41e1e; /* vermelho */
+  color: white;
+}
+
+.cart h2 {
+  margin-bottom: 15px; /* espaço abaixo do título */
+}
+
+.js-cart {
+  margin-top: 10px; /* espaço acima da lista, opcional */
+}
+
+.js-cart li {
+  display: flex;
+  flex-direction: row; /* alinhamento horizontal */
+  align-items: center; /* centraliza vertical */
+  width: 300px; /* mais comprido */
+  height: 80px; /* mais baixo */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #fafafa;
+  margin-bottom: 40px;
+  margin-bottom: 15px; /* espaço entre os itens */
+  gap: 10px; /* espaço entre imagem e texto */
+}
+
+.js-cart li img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.js-cart li p {
+  margin: 0;
+  font-size: 10px;
+}
+
+.footer {
+  background-color: rgb(175, 155, 123);
+  padding: 20px 0 20px 0;
+  text-align: center;
+}

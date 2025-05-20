@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Best Online Store</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="icon" href="./img/favicon-32x32.png" />
+  </head>
+  <body>
+    <header>
+      <h1 class="js-title title"></h1>
+    </header>
+
+    <main class="main">
+      <form class="js-form form">
+        <input
+          class="js-input input"
+          type="text"
+          placeholder="Search product"
+        />
+        <button class="js-btn btn" type="submit">Find</button>
+      </form>
+      <section class="container">
+        <section class="cart">
+          <h2>Shopping Cart 🛒</h2>
+          <ul class="js-cart cart-list"></ul>
+
+          <p class="cart-summary">
+            Items: <span class="js-quantity">0</span> | Total: £<span
+              class="js-total"
+              >0.00</span
+            >
+          </p>
+        </section>
+
+        <section class="products">
+          <h2>Most popular products 🛍️</h2>
+          <ul class="js-productslist productslist"></ul>
+        </section>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2025 🧿 🎽 🖥️ 🧥 🎧 🎒</p>
+    </footer>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
