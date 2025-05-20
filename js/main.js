@@ -80,6 +80,10 @@ function renderProducts(products) {
 function renderCart() {
   cartList.innerHTML = "";
 
+  // Resetar totais antes de calcular
+  totalQuantity = 0;
+  totalPrice = 0;
+
   if (cart.length === 0) {
     cartList.innerHTML = "<p>Your cart is empty.</p>";
     totalPriceEl.textContent = "0.00";
@@ -89,7 +93,6 @@ function renderCart() {
   }
 
   cart.forEach((item) => {
-    //Loop (bucle)
     const li = document.createElement("li"); //DOM Avancado\\
     li.classList.add("cart-item");
     li.innerHTML = `
